@@ -8,7 +8,7 @@ private:
 	int mStrongUnitNumber;
 	
 public:
-	cArmy(eRace aOwner, int aWeak, int aStong)
+	cArmy(eRace aOwner, int aWeak, int aStrong)
 	: mOwner(aOwner)
 	, mWeakUnitNumber(aWeak)
 	, mStrongUnitNumber(aStrong)
