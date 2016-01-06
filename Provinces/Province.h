@@ -9,6 +9,9 @@ private:
 	int mID;
 	std::string mName;
 	eRace mOwner;
+	bool mBuilding_Fortress;//Fortress built?
+	bool mBuilding_Port; //Port built?
+	bool mIsWater; //Ground or ocean?
 	
 	std::list<cArmy> mArmies;
 
