@@ -1,3 +1,4 @@
+#include <set>
 
 
 class cConnection
@@ -10,7 +11,7 @@ public:
 	cConnection(aID){mID=aID;}
 	void AddConnection(int aID){mConnected.insert(aID);}//todo:check
 	
-	bool IsConnected(int aID){if (mConnected.};
+	bool IsConnected(int aID){return !(mConnected.find(aID) == mConnected.end());}
 	std::set<int>& GetConnections(){return mConnected;}
 	
 }
