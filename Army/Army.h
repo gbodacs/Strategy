@@ -1,3 +1,5 @@
+#include "Races.h"
+
 
 class cArmy
 {

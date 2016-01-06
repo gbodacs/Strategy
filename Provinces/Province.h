@@ -1,3 +1,7 @@
+#include "MapPoint.h"
+#include "Races.h"
+#include <list>
+#include <string>
 
 class cProvince
 {
@@ -25,15 +29,15 @@ public:
 	, mOwner(aOwner)
 	{}
 	
-	int GetIncome(){return mIncome;}
-	int GetManPower(){return mManPower;}
-	cMapPoint& GetCenterPoint(){return mCenterPoint;} //Map graphics position
+	int GetIncome() {return mIncome;}
+	int GetManPower() {return mManPower;}
+	cMapPoint& GetCenterPoint() {return mCenterPoint;} //Map graphics position
 	//int mGraphics;
-	int GetID(){return mID;}
-	std::string& GetName(){return mName;}
-	eRace GetOwner(){return mOwner;}
+	int GetID() {return mID;}
+	std::string& GetName() {return mName;}
+	eRace GetOwner() {return mOwner;}
 	
-	void SetOwner(eRace aNewOwner){mOwner = aNewOwner;}
+	void SetOwner(eRace aNewOwner) {mOwner = aNewOwner;}
 	
 	void AddArmy()
 };
